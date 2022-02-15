@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  background-color: lightblue;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navigation img {
+  height: 4rem;
+  width: auto;
+}
+
+.navigation a:link,
+.navigation a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #212529;
+}
+
+.navigation a:hover,
+.navigation a:active {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition-duration: 0.5s;
+  background-color: whitesmoke;
+}
+
+h1 {
+  font-size: 1.8 rem;
+  flex: 1 0 auto;
+}
+
+footer {
+  padding: 1rem;
+  flex-shrink: 0;
+  width: 100%;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 1rem;
+}
