@@ -1,65 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <script src="https://kit.fontawesome.com/beff56db6b.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/beff56db6b.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>contact</title>
-</head>
+  </head>
 
-<body>
-  <header>
-    <div class="navigation">
-      <a href="index.html">
-        <img src="images/Logo (1).png" alt="logo" class="logo2" />
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html"> Home</a></li>
-          <li><a href="contact.html" class="active"> Contact </a></li>
-        </ul>
-      </nav>
+  <body>
+    <header>
+      <div class="navigation">
+        <a href="index.html">
+          <img src="images/Logo (1).png" alt="logo" class="logo2" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="contact.html" class="active"> Contact </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+    
+    <div class="contact-container">
+      <div class="contact">
+        <div class="contact-us-section">
+          <div class="image-container-contact">
+            <img src="./images/patientAndDoc.jpeg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-wrapper">
+        <div class="contact-h1">
+          <h1><strong>Contact Us</strong></h1>
+          <br />
+          <p>
+            <b
+              >We would love to hear from you, please provide the information below.
+            </b>
+          </p>
+        </div>
+        <form class="contact-form">
+          <!-- IMPORTANT-->
+          <table>
+            <tr>
+              <td>First Name :</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" placeholder="First Name" required />
+              </td>
+            </tr>
+            <tr>
+              <td>Last Name :</td>
+            </tr>
+            <tr>
+              <td><input type="text" placeholder="Last Name" required /></td>
+            </tr>
+            <tr>
+              <td>NPI :</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="number" placeholder="NPI Number" required />
+              </td>
+            </tr>
+            <tr>
+              <td>Phone Number</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="number" placeholder="Phone Number" required />
+              </td>
+            </tr>
+            <tr>
+              <td>Email :</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="email" placeholder="Email" required />
+              </td>
+            </tr>
+            <tr>
+              <td>Have any questions?</td>
+            </tr>
+            <tr>
+              <td>
+                <textarea
+                  placeholder="Leave Message Here..."
+                  rows="6"
+                  cols="30"
+                  required
+                ></textarea>
+                <!-- IMPORTANT ATTRIBUTES-->
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" />Sign up for email updates :</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" class="submit-button" />
+                <!-- IMPORTANT-->
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
     </div>
-  </header>
-    <h1> Hello World </h1>
-
-
-
-    <legend>Your Details:</legend>
-    <label>Name: <input type="text" name="name" size="30" maxlength="100"></label><br />
-    <label>Email: <input type="email" name="email" size="30" maxlength="100"></label><br />
-    <label>Number: <input type="email" name="email" size="30" maxlength="100"></label><br />
-    <label>NPI: <input type="email" name="email" size="30" maxlength="100"></label><br />
-
-
-    <p>
-        what provider are you?<br />
-        <label><input type="radio" name="rating" value="yes" /> individual</label>
-        <label><input type="radio" name="rating" value="no" /> organization</label>
-
-    </p>
-    <p>
-        <label for="comments">Comments:</label><br />
-        <textarea rows="4" cols="40" id="comments"></textarea>
-    </p>
-    <label><input type="checkbox" name="subscribe" checked="checked" /> Sign me up for email
-        updates</label><br />
-    <input type="submit" value="Submit review" />
-
+  </div>
     <footer>
-        <a href="https://www.youtube.com" aria-label="youtube">
-            <i class="fab fa-youtube"></i></a>&nbsp; |
-        <a href="https://www.instagram.com" aria-label="instagram">
-            <i class="fab fa-instagram-square"></i></a>
-        &nbsp;|
-        <a href="https://www.facebook.com" aria-label="pinterest">
-            <i class="fab fa-facebook-square"></i></a>
-        <p><b>&copy; 2021 Quick Health, All Rights Reserved</b></p>
+      <a href="https://www.youtube.com" aria-label="youtube">
+        <i class="fab fa-youtube"></i></a
+      >&nbsp; |
+      <a href="https://www.instagram.com" aria-label="instagram">
+        <i class="fab fa-instagram-square"></i
+      ></a>
+      &nbsp;|
+      <a href="https://www.facebook.com" aria-label="pinterest">
+        <i class="fab fa-facebook-square"></i
+      ></a>
+      <p><b>&copy; 2021 Quick Health, All Rights Reserved</b></p>
     </footer>
-
-</body>
-
+  </body>
 </html>
