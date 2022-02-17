@@ -1,0 +1,63 @@
+"doctors": [
+    {
+      "name": "Stephen Abelson",
+      "id": 1,
+      "salary": 200100,
+      "department": "Dental Specialties"
+    },
+    {
+      "name": "Jeffrey Bailey",
+      "id": 2,
+      "salary": 4500021,
+      "department": "Critical Care"
+    },
+    {
+      "name": "Charles Diaz",
+      "id": 3,
+      "salary": 800000,
+      "department": "Sport Medicine"
+    },
+    {
+      "name": "Daniel Farmer",
+      "id": 4,
+      "salary": 132000,
+      "department": "Family Medicine"
+    },
+    {
+      "name": "Steven Gaston",
+      "id": 5,
+      "salary": 145630,
+      "department": "Family Cancer Program"
+    },
+    {
+      "name": "Paul Haas",
+      "id": 6,
+      "salary": 567440,
+      "department": "Surgey"
+    },
+    {
+      "name": "Elizabeth Irani",
+      "id": 7,
+      "salary": 980340,
+      "department": "Urology"
+    },
+    {
+      "name": "Susan Lee",
+      "id": 8,
+      "salary": 445000,
+      "department": "womens Health"
+    },
+    {
+      "name": "Mary Nagarij",
+      "id": 9,
+      "salary": 656000,
+      "department": "Spine Care"
+    },
+    {
+      "name": "Joseph Page",
+      "id": 10,
+      "salary": 767000,
+      "department": "Genral Surgey"
+    }
+  ]
+}
