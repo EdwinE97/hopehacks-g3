@@ -8,6 +8,7 @@
 header {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .hero-image {
@@ -22,15 +23,25 @@ header {
 }
 
 .hero-text {
-  color: black;
+  color: #847e7e;
   position: absolute;
-  top: 35%;
+  top: 37%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .hero-text h1 {
   font-size: 4rem;
+  font-weight: bold;
+}
+
+.wrap {
+  padding: 10px;
+  box-shadow: 0 20px 50px rgb(0 0 0 / 6%);
+  margin: 0 auto;
+  background-color: #e3e2e2;
+  border-radius: 5px;
+  opacity: 0.9;
 }
 
 .navigation {
