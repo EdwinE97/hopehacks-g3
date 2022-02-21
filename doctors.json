@@ -1,63 +1,63 @@
-"doctors": [
+  [
     {
       "name": "Stephen Abelson",
       "id": 1,
-      "salary": 200100,
-      "department": "Dental Specialties"
+      "location": 28205,
+      "department": "Surgery"
     },
     {
       "name": "Jeffrey Bailey",
       "id": 2,
-      "salary": 4500021,
-      "department": "Critical Care"
+      "location": 28202,
+      "department": "Sport Medicine"
     },
     {
       "name": "Charles Diaz",
       "id": 3,
-      "salary": 800000,
+      "location": 28208,
       "department": "Sport Medicine"
     },
     {
       "name": "Daniel Farmer",
       "id": 4,
-      "salary": 132000,
+      "location": 28210,
       "department": "Family Medicine"
     },
     {
       "name": "Steven Gaston",
       "id": 5,
-      "salary": 145630,
-      "department": "Family Cancer Program"
+      "location": 28213,
+      "department": "Family Medicine"
     },
     {
       "name": "Paul Haas",
       "id": 6,
-      "salary": 567440,
-      "department": "Surgey"
+      "location": 28213,
+      "department": "Surgery"
     },
     {
       "name": "Elizabeth Irani",
       "id": 7,
-      "salary": 980340,
-      "department": "Urology"
+      "location":28210,
+      "department": "Family Medicine"
     },
     {
       "name": "Susan Lee",
       "id": 8,
-      "salary": 445000,
-      "department": "womens Health"
+      "location": 28207,
+      "department": "Surgery"
     },
     {
       "name": "Mary Nagarij",
       "id": 9,
-      "salary": 656000,
-      "department": "Spine Care"
+      "location":28202,
+      "department": "Family Medicine"
     },
     {
       "name": "Joseph Page",
       "id": 10,
-      "salary": 767000,
-      "department": "Genral Surgey"
+      "location": 28205,
+      "department": "Surgery"
     }
   ]
-}
+
