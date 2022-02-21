@@ -47,7 +47,7 @@
             </b>
           </p>
         </div>
-        <form class="contact-form">
+        <form class="contact-form" method="POST">
           <!-- IMPORTANT-->
           <table>
             <tr>
@@ -55,21 +55,21 @@
             </tr>
             <tr>
               <td>
-                <input type="text" placeholder="First Name" required />
+                <input type="text" name="firstName" placeholder="First Name" required />
               </td>
             </tr>
             <tr>
               <td>Last Name :</td>
             </tr>
             <tr>
-              <td><input type="text" placeholder="Last Name" required /></td>
+              <td><input type="text" name="lastName" placeholder="Last Name" required /></td>
             </tr>
             <tr>
               <td>Phone Number</td>
             </tr>
             <tr>
               <td>
-                <input type="number" placeholder="Phone Number" required />
+                <input type="number" name="phone" placeholder="Phone Number" required />
               </td>
             </tr>
             <tr>
@@ -77,7 +77,7 @@
             </tr>
             <tr>
               <td>
-                <input type="email" placeholder="Email" required />
+                <input type="email" name="email" placeholder="Email" required />
               </td>
             </tr>
             <tr>
