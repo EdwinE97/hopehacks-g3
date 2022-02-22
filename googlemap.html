@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/beff56db6b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Add Map</title>
+
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 20px;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .card {
+        padding: 20px;
+        width: 300px;
+        height: 200px;
+        background: lightGrey;
+      }
+
+      .card:hover {
+        background: grey;
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      async function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 35.21269, lng: -81.09607 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+
+        const key = `AIzaSyCQqU-1KzkGQMHouB0pu5v_3rpU9K60ETs`;
+        const url = `https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=${key}`;
+
+        const res = await fetch(url).then((res) => res.json());
+        console.log("res is", res);
+      }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navigation">
+        <a href="index.html">
+          <img src="images/Logo (1).png" alt="logo" class="logo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="contact.html"> Contact </a></li>
+            <li><a href="googlemap.html" class="active"> Location </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <div class="container" id="cardContainer">
+      <!-- Below is the INNER HTML -->
+      <div class="card" onclick="handleClick(this)" data-address="Tulsa, OK">
+        <p>Doctor Name: Dr. Rick Flair</p>
+        <p>Clinic Address: Tulsa, OK</p>
+      </div>
+
+      <div class="card" onclick="handleClick(this)" data-address="Oakland, CA">
+        <p>Doctor Name: Dr. Bob Jones</p>
+        <p>Clinic Address: Oakland, CA</p>
+      </div>
+    </div>
+    <footer>
+      <a href="https://www.youtube.com" aria-label="youtube">
+        <i class="fab fa-youtube"></i></a
+      >&nbsp; |
+      <a href="https://www.instagram.com" aria-label="instagram">
+        <i class="fab fa-instagram-square"></i
+      ></a>
+      &nbsp;|
+      <a href="https://www.facebook.com" aria-label="pinterest">
+        <i class="fab fa-facebook-square"></i
+      ></a>
+      <p><b>&copy; 2022 Quick Health, All Rights Reserved</b></p>
+    </footer>
+    <!-- Async script executes immediately and must be after any DOM (Document Object Model) elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQqU-1KzkGQMHouB0pu5v_3rpU9K60ETs&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script>
+      window.onload = (event) => {
+        const doctors = [
+    {
+      "name": "Stephen Abelson",
+      "id": 1,
+      "location": 28205,
+      "department": "Surgery"
+    },
+    {
+      "name": "Jeffrey Bailey",
+      "id": 2,
+      "location": 28202,
+      "department": "Sport Medicine"
+    },
+    {
+      "name": "Charles Diaz",
+      "id": 3,
+      "location": 28208,
+      "department": "Sport Medicine"
+    },
+    {
+      "name": "Daniel Farmer",
+      "id": 4,
+      "location": 28210,
+      "department": "Family Medicine"
+    },
+    {
+      "name": "Steven Gaston",
+      "id": 5,
+      "location": 28213,
+      "department": "Family Medicine"
+    },
+    {
+      "name": "Paul Haas",
+      "id": 6,
+      "location": 28213,
+      "department": "Surgery"
+    },
+    {
+      "name": "Elizabeth Irani",
+      "id": 7,
+      "location":28210,
+      "department": "Family Medicine"
+    },
+    {
+      "name": "Susan Lee",
+      "id": 8,
+      "location": 28207,
+      "department": "Surgery"
+    },
+    {
+      "name": "Mary Nagarij",
+      "id": 9,
+      "location":28202,
+      "department": "Family Medicine"
+    },
+    {
+      "name": "Joseph Page",
+      "id": 10,
+      "location": 28205,
+      "department": "Surgery"
+    }
+  ]
+        const cards = doctors.map(function (doctor) {
+          // ${doctor.name} is a string interpolation.
+          const card = `
+            <div class="card" onclick="handleClick(this)" data-address="${doctor.location}">
+              <p>Doctor Name: ${doctor.name}</p> 
+              <p>Clinic Address: ${doctor.location}</p>
+              <p>Department: ${doctor.department}</p>
+            </div>`;
+          return card;
+        });
+        console.log("cards", cards);
+
+        const cardContainer = document.getElementById("cardContainer");
+        cardContainer.innerHTML = cards.join("");
+        console.log(cardContainer);
+      };
+      // THIS IS WHERE WE ARE GETTING THE ADDRESS
+      async function handleClick(element) {
+        // address from element clicked
+        const address = element.dataset.address;
+
+        // This is the google maps key
+        const key = `AIzaSyCQqU-1KzkGQMHouB0pu5v_3rpU9K60ETs`;
+        const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
+          address
+        )}&key=${key}`;
+
+        // request google api for geometry data from address
+        // google sends back result
+        const res = await fetch(url).then((res) => res.json());
+
+        // use geometry data to update map. Location helps us to access the LONG and LAT
+        const location = res.results[0].geometry.location;
+
+        // This helps us to update map on the page
+        const map = new google.maps.Map(document.getElementById("map"), {
+          // uses "zoom" to zoom into updated location
+          zoom: 10,
+          center: location,
+        });
+        // This Code Updates the pinpoint on the map.
+        const marker = new google.maps.Marker({
+          position: location,
+          map: map,
+        });
+      }
+    </script>
+  </body>
+</html>
