@@ -80,15 +80,6 @@
 
     <div class="container" id="cardContainer">
       <!-- Below is the INNER HTML -->
-      <div class="card" onclick="handleClick(this)" data-address="Tulsa, OK">
-        <p>Doctor Name: Dr. Rick Flair</p>
-        <p>Clinic Address: Tulsa, OK</p>
-      </div>
-
-      <div class="card" onclick="handleClick(this)" data-address="Oakland, CA">
-        <p>Doctor Name: Dr. Bob Jones</p>
-        <p>Clinic Address: Oakland, CA</p>
-      </div>
     </div>
     <footer>
       <a href="https://www.youtube.com" aria-label="youtube">
@@ -109,69 +100,15 @@
       async
     ></script>
     <script>
+      // onload event triggers on page load.
       window.onload = (event) => {
-        const doctors = [
-    {
-      "name": "Stephen Abelson",
-      "id": 1,
-      "location": 28205,
-      "department": "Surgery"
-    },
-    {
-      "name": "Jeffrey Bailey",
-      "id": 2,
-      "location": 28202,
-      "department": "Sport Medicine"
-    },
-    {
-      "name": "Charles Diaz",
-      "id": 3,
-      "location": 28208,
-      "department": "Sport Medicine"
-    },
-    {
-      "name": "Daniel Farmer",
-      "id": 4,
-      "location": 28210,
-      "department": "Family Medicine"
-    },
-    {
-      "name": "Steven Gaston",
-      "id": 5,
-      "location": 28213,
-      "department": "Family Medicine"
-    },
-    {
-      "name": "Paul Haas",
-      "id": 6,
-      "location": 28213,
-      "department": "Surgery"
-    },
-    {
-      "name": "Elizabeth Irani",
-      "id": 7,
-      "location":28210,
-      "department": "Family Medicine"
-    },
-    {
-      "name": "Susan Lee",
-      "id": 8,
-      "location": 28207,
-      "department": "Surgery"
-    },
-    {
-      "name": "Mary Nagarij",
-      "id": 9,
-      "location":28202,
-      "department": "Family Medicine"
-    },
-    {
-      "name": "Joseph Page",
-      "id": 10,
-      "location": 28205,
-      "department": "Surgery"
-    }
-  ]
+        fetch("/doctors")
+        // promise API 
+          .then((res) => res.json())
+          .then(renderDoctorCards);
+      };
+      
+      function renderDoctorCards(doctors = []) {
         const cards = doctors.map(function (doctor) {
           // ${doctor.name} is a string interpolation.
           const card = `
@@ -187,7 +124,7 @@
         const cardContainer = document.getElementById("cardContainer");
         cardContainer.innerHTML = cards.join("");
         console.log(cardContainer);
-      };
+      }
       // THIS IS WHERE WE ARE GETTING THE ADDRESS
       async function handleClick(element) {
         // address from element clicked
