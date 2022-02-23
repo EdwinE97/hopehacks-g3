@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navigation">
+      <a href="index.html">
+        <img src="images/Logo (1).png" alt="logo" class="logo2" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="contact.html" class="active"> Contact </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+
+<img src="images/patientAndDoc.jpeg">
+
+
+  <section id="register">
+
+    <form action="/" class="form" method="POST">
+
+      <h1 class="contact-header"><strong>Contact Us</strong></h1>
+
+      <p class="contact-banner">
+        <b>
+          We would love to hear from you, please provide the information below.
+        </b>
+      </p>
+
+    <input type="text" name="fullName" placeholder="Please write your full name" required>
+
+    <input type="text" name="department" placeholder="Medical Department ex.'Pediatrics'" required>
+    <input type="text" name="location" placeholder="Please provide the address of your practice" required>
+
+    <input type="number" name="phone" placeholder="Phone Number Format: ##########">
+
+    <input type="text" name="email" placeholder="Email Address" required>
+   
+    <textarea placeholder="Leave Message Here..."></textarea>
+
+    <div class="btnHold">
+    <button type="submit"><p class="button-script">Submit</p></button>
+    </div>
+    </form>
+
+</section>
+</div>
+
+    <footer>
+      <a href="https://www.youtube.com" aria-label="youtube">
+        <i class="fab fa-youtube"></i></a
+      >&nbsp; |
+      <a href="https://www.instagram.com" aria-label="instagram">
+        <i class="fab fa-instagram-square"></i
+      ></a>
+      &nbsp;|
+      <a href="https://www.facebook.com" aria-label="pinterest">
+        <i class="fab fa-facebook-square"></i
+      ></a>
+      <p><b>&copy; 2022 Quick Health, All Rights Reserved</b></p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/beff56db6b.js"
+    crossorigin="anonymous"></script>
+
+    <script src="data/app.js"></script>
+</body>
+</html>

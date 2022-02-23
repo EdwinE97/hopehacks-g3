@@ -1,1 +1,0 @@
-# hopehacks-g3

@@ -1,0 +1,100 @@
+{
+  "provider": [
+    {
+      "id": 1,
+      "name": "Stephen Abelson",
+      "department": "Surgery",
+      "location": 28205,
+      "phone": "3245407122",
+      "email": "wagnerch@msn.com"
+    },
+    {
+      "id": 2,
+      "name": "Jeffrey Bailey",
+      "department": "Sport Medicine",
+      "location": 28202,
+      "phone": "5968121216",
+      "email": "flakeg@hotmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Charles Diaz",
+      "department": "Sport Medicine",
+      "location": 28208,
+      "phone": "4565319925",
+      "email": "jdhedden@me.com"
+    },
+    {
+      "id": 4,
+      "name": "Daniel Farmer",
+      "department": "Family Medicine",
+      "location": 28210,
+      "phone": "6005866091",
+      "email": "maikelnai@msn.com"
+    },
+    {
+      "id": 5,
+      "name": "Steven Gaston",
+      "department": "Family Medicine",
+      "location": 28213,
+      "phone": "9672160467",
+      "email": "chaki@yahoo.com"
+    },
+    {
+      "id": 6,
+      "name": "Paul Haas",
+      "department": "Surgery",
+      "location": 28213,
+      "phone": "4098945710",
+      "email": "dartlife@yahoo.com"
+    },
+    {
+      "id": 7,
+      "name": "Elizabeth Irani",
+      "department": "Family Medicine",
+      "location": 28210,
+      "phone": "9292754213",
+      "email": "kingjoshi@hotmail.com"
+    },
+    {
+      "id": 8,
+      "name": "Susan Lee",
+      "department": "Surgery",
+      "location": 28207,
+      "phone": "9292754213",
+      "email": "janneh@mac.com"
+    },
+    {
+      "id": 9,
+      "name": "Mary Nagarij",
+      "department": "Family Medicine",
+      "location": 28202,
+      "phone": "6142194458",
+      "email": "amimojo@icloud.com"
+    },
+    {
+      "id": 10,
+      "name": "Joseph Page",
+      "department": "Surgery",
+      "location": 28205,
+      "phone": "7882241972",
+      "email": "thaljef@live.com"
+    },
+    {
+      "id": 11,
+      "name": "Bill Jossen",
+      "department": "Obstetrics",
+      "location": "29267",
+      "phone": "7770008888",
+      "email": "argle@bargle.org"
+    },
+    {
+      "id": 12,
+      "name": "Chioma Onukogu",
+      "department": "Hospice",
+      "location": "12345",
+      "phone": "1112223333",
+      "email": "email@digital.com"
+    }
+  ]
+}
